@@ -7,23 +7,23 @@ import com.abrito10.dsvendas.entities.Seller;
 public class SaleSumDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private String selletName;
+	private String sellerName;
 	private Double sum;
 	
 	public SaleSumDTO() {
 	}
 	
 	public SaleSumDTO(Seller seller, Double sum) {
-		this.selletName = seller.getName();
+		this.sellerName = seller.getName();
 		this.sum = sum;
 	}
 
-	public String getSelletName() {
-		return selletName;
+	public String getSellerName() {
+		return sellerName;
 	}
 
-	public void setSelletName(String selletName) {
-		this.selletName = selletName;
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
 	}
 
 	public Double getSum() {
